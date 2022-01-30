@@ -7,14 +7,14 @@ const ingredients = [
   'Condiments',
 ];
 
-console.log(ingredients);
+// console.log(ingredients);
 
 // const listElement = document.createElement('li');
 // listElement.classList.add('item');
 // listElement.textContent ='Potatoes';
 // console.log(listElement)
 const selectUL = document.querySelector('#ingredients');
-// console.log(selectUL);
+console.log(selectUL);
 // selectUL.append(listElement);
 
 
