@@ -13,24 +13,15 @@ const images = [
   },
 ];
 
-
 const selectUL = document.querySelector('.gallery');
 
-
-const addListImg = document.createElement('li');
-addListImg.classList = 'list';
-selectUL.appendChild(addListImg);
-
-const addImg = document.createElement('img');
-addImg.classList = 'picture';
-addImg.src = 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
-addImg.alt = 'White and Black Long Fur Cat';
-addListImg.appendChild(addImg);
-
-
-
+images.forEach((images) => {
+  return selectUL.insertAdjacentHTML(
+    'beforeend', `<li class='gallery-item'>
+    <img class='gallery-image' src='${images.url}' alt='${images.alt}'>
+</li>`
+  )
+})
 
 
 console.log(selectUL);
-console.log(addListImg);
-console.log(addImg)
