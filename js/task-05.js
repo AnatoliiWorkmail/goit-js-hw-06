@@ -2,12 +2,10 @@
 const selectInput = document.querySelector('#name-input');
 const selectOutput = document.querySelector('#name-output');
 function Name() {
-    if (selectInput.value === "") {
-      return selectOutput.textContent = 'Anonymous'   
-     }
+    (selectInput.value === "") ?  selectOutput.textContent = 'Anonymous' :   selectOutput.textContent = selectInput.value   
+     
    
-        let content = selectInput.value;
-        return selectOutput.textContent = content; 
+        
 
     }
     
