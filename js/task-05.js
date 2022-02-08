@@ -3,7 +3,7 @@ const selectInput = document.querySelector('#name-input');
 const selectOutput = document.querySelector('#name-output');
 function Name() {
     if (selectInput.value === "") {
-      return selectOutput.textContent = 'anonymous'   
+      return selectOutput.textContent = 'Anonymous'   
      }
    
         let content = selectInput.value;

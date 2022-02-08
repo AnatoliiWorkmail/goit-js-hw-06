@@ -15,13 +15,18 @@ const images = [
 
 const selectUL = document.querySelector('.gallery');
 
-images.forEach((images) => {
-  return selectUL.insertAdjacentHTML(
-    'beforeend', `<li class='gallery-item'>
-    <img class='gallery-image' src='${images.url}' alt='${images.alt}'>
-</li>`
-  )
-})
+const elementIter = images.map((images)=>`<li class='gallery-item'>
+ <img class='gallery-image' src='${images.url}' alt='${images.alt}' width="480px" height="320px"  >
+ </li>`)
 
+selectUL.insertAdjacentHTML("beforeend",elementIter.join(' '))
+
+// images.map((images) => {
+//   return selectUL.insertAdjacentHTML(
+//     'beforeend', `<li class='gallery-item'>
+//     <img class='gallery-image' src='${images.url}' alt='${images.alt}' width="480px" height="320px"  >
+// </li>`
+//   )
+// })
 
 console.log(selectUL);

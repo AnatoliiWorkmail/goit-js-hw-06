@@ -8,7 +8,7 @@ function changeSize() {
     textEl.style.fontSize = `${inputEl.value}px`
     
 }
-inputEl.addEventListener('change',changeSize)
+inputEl.addEventListener('input',changeSize)
 
 console.log(textEl.style.fontSize)
 console.log(inputEl.value)
